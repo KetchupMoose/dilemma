@@ -7,6 +7,7 @@
 //
 
 #import "dilemmaViewController.h"
+#import "SetPicturesViewController.h"
 
 @interface dilemmaViewController ()
 
@@ -24,6 +25,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)SetPhotos:(id)sender
+{
+    SetPicturesViewController *spvc;
+    spvc=[self.storyboard instantiateViewControllerWithIdentifier:@"SetPics"];
+    
+    [self addChildViewController:spvc];
+    [self.view addSubview:spvc.view];
+    
 }
 
 @end

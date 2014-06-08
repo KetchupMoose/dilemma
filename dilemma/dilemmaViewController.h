@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface dilemmaViewController : UIViewController
+- (IBAction)SetPhotos:(id)sender;
 
 @end

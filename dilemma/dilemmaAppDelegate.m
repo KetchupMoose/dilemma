@@ -7,11 +7,17 @@
 //
 
 #import "dilemmaAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation dilemmaAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"e1iTMpSZGceylxf6D5fkQNDBa5CxgoInNdlSdfj3"
+                  clientKey:@"jU4Ej42i5pUvY4Pl9FpwYWuiatiXUso3ee08K1Ud"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     // Override point for customization after application launch.
     return YES;
 }
